@@ -1,0 +1,17 @@
+ZSH_THEME_GIT_PROMPT_PREFIX=' on %B%F{magenta} '
+ZSH_THEME_GIT_PROMPT_SUFFIX='%f%b'
+ZSH_THEME_GIT_PROMPT_DIRTY=''
+ZSH_THEME_GIT_PROMPT_CLEAN=''
+
+ZSH_THEME_GIT_PROMPT_UNTRACKED=' %F{red}[?]%f'
+ZSH_THEME_GIT_PROMPT_ADDED=' %F{green}[+]%f'
+ZSH_THEME_GIT_PROMPT_MODIFIED=' %F{red}[!]%f'
+ZSH_THEME_GIT_PROMPT_RENAMED=' %F{green}[»]%f'
+ZSH_THEME_GIT_PROMPT_DELETED=' %F{red}[✘]%f'
+ZSH_THEME_GIT_PROMPT_UNMERGED=' %F{red}[=]%f'
+ZSH_THEME_GIT_PROMPT_AHEAD=' %F{green}[⇡]%f'
+ZSH_THEME_GIT_PROMPT_BEHIND=' %F{red}[⇣]%f'
+ZSH_THEME_GIT_PROMPT_DIVERGED=' %F{yellow}[⇕]%f'
+ZSH_THEME_GIT_PROMPT_STASHED=' %F{blue}[$]%f'
+
+PROMPT=$'\n''%B%F{cyan}%1~%f%b$(git_prompt_info)$(git_prompt_status)'$'\n''%(?.%B%F{green}.%B%F{red})❯%f%b '
