@@ -50,9 +50,17 @@ cp herdr/.config/herdr/config.toml "$HOME/.config/herdr/config.toml"
 Настройки находятся в `nvim/.config/nvim` и устанавливаются по пути `~/.config/nvim`.
 
 - Основаны на LazyVim.
+- Тема: Catppuccin Mocha; строка состояния использует палитру Catppuccin.
 - `lazy-lock.json` фиксирует версии плагинов.
 - Иконки требуют Nerd Font из команды установки выше.
 - Приветственная надпись задаётся в `lua/plugins/dashboard.lua`.
+
+Для Verilog и SystemVerilog после установки плагинов выполните в Neovim:
+
+```vim
+:MasonInstall verible
+:TSInstall systemverilog
+```
 
 ## Herdr
 
